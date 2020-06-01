@@ -230,7 +230,9 @@ header {
         }
     }
 }
+/*film section end*/
 
+/*all button style start*/
 .see_more {
     text-align: center;
      padding: 30px 0;
@@ -250,7 +252,9 @@ header {
         }
     }
 }
+/*all button style end*/
 
+/*health section start*/
 .health {
     background: url(../images/img4.png);
     padding: 160px 0;
@@ -270,7 +274,29 @@ header {
         font-size: 16px;
     }
 }
+/*health section end*/
+/*campaign section start*/
+
+.campaign {
+    margin: 65px 0;
+    
+    h2 {
+        text-transform: $cap;
+        text-align: center;
+        color: $head-color;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    p {
+        padding: 10px 192px;
+        text-align: center;
+        color: $font-color1;
+        font-size: 16px;
+    }
+}
+/*campaign section end*/
 
 
 
-/*film section end*/
+
+
