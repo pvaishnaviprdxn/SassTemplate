@@ -179,7 +179,7 @@ header {
 }
 
 .films {
-    margin-top: 55px;
+    margin: 65px 0;
 
     h2 {
         text-transform: $cap;
@@ -250,6 +250,27 @@ header {
         }
     }
 }
+
+.health {
+    background: url(../images/img4.png);
+    padding: 160px 0;
+    
+    h2 {
+        text-transform: $cap;
+        text-align: center;
+        color: $primary-color;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    
+    p {
+        padding: 10px 100px;
+        text-align: center;
+        color: $primary-color;
+        font-size: 16px;
+    }
+}
+
 
 
 /*film section end*/
