@@ -61,6 +61,10 @@ header {
             color: $icon-color;
         }
         
+        .facebook--mod:hover:after,
+        .youtube--mod:hover:after,
+        .twitter--mod:hover:after { color: $menu-hover; }
+        
         .language { 
             text-transform: $cap;
             text-align: center;
