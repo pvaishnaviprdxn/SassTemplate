@@ -1,1 +1,89 @@
-@import "reset";
+@import "reset","variables","mixin";
+
+/*header style start*/
+header { 
+    padding: 20px 0;
+    
+    .logo { 
+        display: inline-block;
+        
+        img { width: 150px; }
+    }
+    
+    nav {
+        padding: 0 15px;
+        display: inline-block;
+        
+        li { margin: 0 25px; }
+        
+        a { 
+            text-transform: $cap;
+            color: $font-color1;
+            font-size: 14px;
+            
+            &:hover { color: $menu-hover; }
+        } 
+    }
+    
+    .social-lang {
+        float: right;
+        
+        .social_links_category {
+            text-indent: -9999px;
+            display: inline-block;
+        }
+        
+        .social_links_category:after {
+            text-align: center;
+            text-indent: 0;
+            width: 12px;
+            padding: 6px 6px;
+            border: .5px solid $font-color1;
+            @include bd-radius(16px);
+            margin-left: 6px;
+            float: right;
+            background: #fff;
+            color: rgb(61, 57, 57);
+            font-family: "Fontawesome";
+            font-size: 12px; 
+        }
+        
+        .facebook--mod:after { 
+            content: '\f09a';
+            color: $icon-color; 
+        }
+        .youtube--mod:after { 
+            content: '\f167';
+            color: $icon-color;
+        }
+        .twitter--mod:after { 
+            content: '\f099';
+            color: $icon-color;
+        }
+        
+        .language { 
+            text-transform: $cap;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            cursor: pointer;
+            color: $icon-color;
+            
+            .language_name--active { 
+                color: $font-color1;
+                font-weight: 600;
+            }
+            
+            .language_name--active:after {
+                content: ' /';
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*header style end*/
+
+
+
+
