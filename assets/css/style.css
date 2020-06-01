@@ -147,6 +147,10 @@ header {
     header .social-lang .twitter--mod:after {
       content: '\f099';
       color: #a2a2a2; }
+    header .social-lang .facebook--mod:hover:after,
+    header .social-lang .youtube--mod:hover:after,
+    header .social-lang .twitter--mod:hover:after {
+      color: #34adf2; }
     header .social-lang .language {
       text-transform: capitalize;
       text-align: center;
