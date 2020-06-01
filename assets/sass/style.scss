@@ -97,8 +97,8 @@ header {
     .quote-heading { 
         text-align: center;
         padding: 25px 0;
-        background-color: $quote-color; 
-        color: $banner-font-color;
+        background-color: $bck-quote-color; 
+        color: $primary-color;
         font-size: 28px;
         font-weight: 600;
     }
@@ -112,14 +112,14 @@ header {
             
             p {
                 padding: 20px 0;
-                color: $banner-font-color;
+                color: $primary-color;
                 font-size: 24px;
                 font-weight: 600;
             }
             
             .author {
                 text-transform: $cap;
-                color: $banner-font-color;
+                color: $primary-color;
                 font-size: 21px;
             }
             
@@ -148,9 +148,108 @@ header {
         .dots_circle_showing:after,
         .dots_circle:hover:after { 
             opacity: 1;
-            color: $banner-font-color;
+            color: $primary-color;
         }
     }
 }
 
 /*banner section end*/
+
+/*film section start*/
+%films {
+    display: block;
+    background: $films-background;
+}
+%video {
+    width: 40%;
+    float: left;
+}
+%title {
+    font-size: 24px;
+    font-weight: 600;
+}
+%fimls-sec {
+    width: 59%;
+    display: inline-block;
+}
+%filmabout_content { padding: 17px 30px; }
+%films-desc {
+    text-align: justify;
+    padding: 10px 0; 
+}
+
+.films {
+    margin-top: 55px;
+
+    h2 {
+        text-transform: $cap;
+        text-align: center;
+        color: $head-color;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    
+    p {
+        text-align: center;
+        line-height: 1.5;
+        padding: 5px 200px 35px 200px;
+        color: $font-color1;
+        font-size: 14px;
+    }
+    
+    .content {
+        width: 70%;
+        margin: 0 auto;
+        
+        .films1 { @extend %films; }
+            
+        .video { @extend %video; }
+
+        .about { 
+            @extend %fimls-sec;
+
+            .filmabout_content {
+                @extend %filmabout_content;
+
+                .title { @extend %title; }
+                p { @extend %films-desc;}
+            }
+        }
+        
+        .films2 {
+            @extend %films;
+            margin-top: 30px;
+            
+            .video { @extend %video; }
+            
+            .title { 
+                @extend %title;
+                text-transform: $cap;
+            }
+            img { height: 144px; }
+        }
+    }
+}
+
+.see_more {
+    text-align: center;
+     padding: 30px 0;
+    
+    a {
+        text-transform: $up;
+        padding: 8px 24px;
+        @include bd-radius(30px);
+        background-color: $menu-hover;
+        color: $primary-color;
+        border: 1px solid transparent;
+        
+        &:hover {
+            background-color: $primary-color;
+            color: $menu-hover;
+            border: 1px solid $menu-hover;
+        }
+    }
+}
+
+
+/*film section end*/
