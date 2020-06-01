@@ -112,7 +112,7 @@ header {
       margin: 0 25px; }
     header nav a {
       text-transform: capitalize;
-      color: #7c7c7c;
+      color: #615f5f;
       font-size: 14px; }
       header nav a:hover {
         color: #34adf2; }
@@ -126,7 +126,7 @@ header {
       text-indent: 0;
       width: 12px;
       padding: 6px 6px;
-      border: 0.5px solid #7c7c7c;
+      border: 0.5px solid #615f5f;
       border-radius: 16px;
       -webkit-border-radius: 16px;
       -ms-border-radius: 16px;
@@ -155,7 +155,7 @@ header {
       cursor: pointer;
       color: #a2a2a2; }
       header .social-lang .language .language_name--active {
-        color: #7c7c7c;
+        color: #615f5f;
         font-weight: 600; }
       header .social-lang .language .language_name--active:after {
         content: ' /';
@@ -219,5 +219,73 @@ header {
       color: #f7f7f7; }
 
 /*banner section end*/
+/*film section start*/
+.films .content .films1, .films .content .films2 {
+  display: block;
+  background: #e7e8e8; }
+
+.films .content .video, .films .content .films2 .video {
+  width: 40%;
+  float: left; }
+
+.films .content .about .filmabout_content .title, .films .content .films2 .title {
+  font-size: 24px;
+  font-weight: 600; }
+
+.films .content .about {
+  width: 59%;
+  display: inline-block; }
+
+.films .content .about .filmabout_content {
+  padding: 17px 30px; }
+
+.films .content .about .filmabout_content p {
+  text-align: justify;
+  padding: 10px 0; }
+
+.films {
+  margin-top: 55px; }
+  .films h2 {
+    text-transform: capitalize;
+    text-align: center;
+    color: #3c3d41;
+    font-size: 28px;
+    font-weight: 600; }
+  .films p {
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px 200px 35px 200px;
+    color: #615f5f;
+    font-size: 14px; }
+  .films .content {
+    width: 70%;
+    margin: 0 auto; }
+    .films .content .films2 {
+      margin-top: 30px; }
+      .films .content .films2 .title {
+        text-transform: capitalize; }
+      .films .content .films2 img {
+        height: 144px; }
+
+.see_more {
+  text-align: center;
+  padding: 30px 0; }
+  .see_more a {
+    text-transform: uppercase;
+    padding: 8px 24px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: #34adf2;
+    color: #f7f7f7;
+    border: 1px solid transparent; }
+    .see_more a:hover {
+      background-color: #f7f7f7;
+      color: #34adf2;
+      border: 1px solid #34adf2; }
+
+/*film section end*/
 
 /*# sourceMappingURL=style.css.map */
